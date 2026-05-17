@@ -23,6 +23,8 @@ MostVisited_DataYear_WorldBank (int): Year for which the World Bank data on inte
 
 3: Descriptive Statistics 
 
+<img width="457" height="387" alt="image" src="https://github.com/user-attachments/assets/76c168c4-9a8e-48ef-b643-dd1d62cb807a" />
+
 Analyzing the core target metric (2024 Predictive Arrivals in Millions) across the clean tracking group produces the following distribution parameters:
 <li> Count (Sample Size): $50$ countries reporting
 <li> Mean (Average Volume): $24.10$ million arrivals per country
