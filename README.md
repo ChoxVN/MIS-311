@@ -12,7 +12,7 @@ Column Definitions
 <li>	MostVisited_NumofArrivals_WorldBank (float64): Annual international tourist arrivals as reported by the World Bank.
 MostVisited_DataYear_WorldBank (int): Year for which the World Bank data on international tourist arrivals is provided.
 
-2: 
+2: Data Cleaning
 <li> Missing Values Assessment: A completeness review indicates that while core identifiers like country are 100% complete, reporting levels vary drastically by year. The predictive 2024 column contains 50 active records (156 missing), 2023 contains 49 active records, and 2022 contains 20 active records. The World Bank columns feature 205 records (1 missing).
 
 <li> Handling Strategy: To preserve structural integrity and prevent losing valid baseline metadata for countries, pairwise deletion is used. Blank tracking cells are maintained as empty entries rather than zero-filled, allowing mathematical formulas to naturally omit non-reporting periods without corrupting metrics.
@@ -20,3 +20,21 @@ MostVisited_DataYear_WorldBank (int): Year for which the World Bank data on inte
 <li> Duplicate Rows Assessment: A strict structural identity scan revealed exactly 3 duplicate rows in the spreadsheet: redundant secondary entries for Eritrea, Montenegro, and Brunei.
 
 <li> Handling Strategy: These 3 redundant rows were systematically removed to eliminate double-counting and artificially inflated metrics, resulting in a clean, finalized dataset of 203 unique rows.
+
+3: Descriptive Statistics 
+
+Analyzing the core target metric (2024 Predictive Arrivals in Millions) across the clean tracking group produces the following distribution parameters:
+<li> Count (Sample Size): $50$ countries reporting
+<li> Mean (Average Volume): $24.10$ million arrivals per country
+<li> Median (Middle Distribution): $16.80$ million arrivals
+<li> Maximum Value: $89.40$ million arrivals (France)
+<li> Minimum Value: $5.90$ million arrivals (Brazil)
+<li> Skewness Coefficient: $+1.77$ (Highly right-skewed distribution)
+
+Two Key Insights
+
+<li> Insight 1: Massive Market Concentration & Skewness toward Western Super-Hubs
+The distribution reveals a highly severe positive right-skew ($+1.77$), driven by the large gap between the median ($16.80$ million) and the absolute maximum ($89.40$ million). This indicates that global international tourism is not evenly distributed; instead, an elite tier of dominant traditional markets—led by France ($89.4\text{M}$), Spain ($83.7\text{M}$), and the United States ($79.3\text{M}$)—monopolizes the overwhelming majority of global traveler volumes, while most other countries handle much lower, localized flows.
+
+<li> Insight 2: Aggressive Capacity Threshold for Tier Entry
+The minimum floor value required to even be listed within this active 2024 tracking segment sits at a significant $5.90$ million arrivals (held by Brazil). This demonstrates that global tourism tracking at this scale features a steep entry barrier, implying that a nation must possess extensive transport infrastructure, established hotel networks, and strong international brand equity to operate as a standard competitor in global leisure or business travel markets.
