@@ -13,10 +13,10 @@ Column Definitions
 MostVisited_DataYear_WorldBank (int): Year for which the World Bank data on international tourist arrivals is provided.
 
 2: 
-Missing Values Assessment: A completeness review indicates that while core identifiers like country are 100% complete, reporting levels vary drastically by year. The predictive 2024 column contains 50 active records (156 missing), 2023 contains 49 active records, and 2022 contains 20 active records. The World Bank columns feature 205 records (1 missing).
+<li> Missing Values Assessment: A completeness review indicates that while core identifiers like country are 100% complete, reporting levels vary drastically by year. The predictive 2024 column contains 50 active records (156 missing), 2023 contains 49 active records, and 2022 contains 20 active records. The World Bank columns feature 205 records (1 missing).
 
-Handling Strategy: To preserve structural integrity and prevent losing valid baseline metadata for countries, pairwise deletion is used. Blank tracking cells are maintained as empty entries rather than zero-filled, allowing mathematical formulas to naturally omit non-reporting periods without corrupting metrics.
+<li> Handling Strategy: To preserve structural integrity and prevent losing valid baseline metadata for countries, pairwise deletion is used. Blank tracking cells are maintained as empty entries rather than zero-filled, allowing mathematical formulas to naturally omit non-reporting periods without corrupting metrics.
 
-Duplicate Rows Assessment: A strict structural identity scan revealed exactly 3 duplicate rows in the spreadsheet: redundant secondary entries for Eritrea, Montenegro, and Brunei.
+<li> Duplicate Rows Assessment: A strict structural identity scan revealed exactly 3 duplicate rows in the spreadsheet: redundant secondary entries for Eritrea, Montenegro, and Brunei.
 
-Handling Strategy: These 3 redundant rows were systematically removed to eliminate double-counting and artificially inflated metrics, resulting in a clean, finalized dataset of 203 unique rows.
+<li> Handling Strategy: These 3 redundant rows were systematically removed to eliminate double-counting and artificially inflated metrics, resulting in a clean, finalized dataset of 203 unique rows.
