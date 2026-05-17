@@ -1,15 +1,15 @@
 # MIS-311
 
 1: Data overview
-•	Context & Background: This dataset captures international tourism arrivals across various global destinations. It tracks predictive arrival data for 2024 alongside historical actuals from 2022 and 2023, supplemented by baseline metrics from the World Bank. It allows for an analysis of global travel hubs and pandemic recovery tracking.
-•	Data Source: The dataset compiles public tourism data, including tracking metrics directly attributed to the World Bank.
-•	Dimensions: The dataset contains 229 rows and 6 columns.
+<li>	Context & Background: This dataset captures international tourism arrivals across various global destinations. It tracks predictive arrival data for 2024 alongside historical actuals from 2022 and 2023, supplemented by baseline metrics from the World Bank. It allows for an analysis of global travel hubs and pandemic recovery tracking.
+<li>	Data Source: The dataset compiles public tourism data, including tracking metrics directly attributed to the World Bank.
+<li>	Dimensions: The dataset contains 229 rows and 6 columns.
 Column Definitions
-•	Country: Name of the destination country/territory.
-•	MostVisited_NumOfArrivalsPredictive_Millions_2024 (float64): Predicted number of international tourist arrivals in millions for the year 2024.
-•	MostVisited_NumOfArrivals_Millions_2023 (float64):  Actual number of international tourist arrivals in millions for the year 2023.
-•	MostVisited_NumOfArrivals_Millions_2022 (float64): Actual number of international tourist arrivals in millions for the year 2022.
-•	MostVisited_NumofArrivals_WorldBank (float64): Annual international tourist arrivals as reported by the World Bank.
+<li>	Country: Name of the destination country/territory.
+<li>	MostVisited_NumOfArrivalsPredictive_Millions_2024 (float64): Predicted number of international tourist arrivals in millions for the year 2024.
+<li>	MostVisited_NumOfArrivals_Millions_2023 (float64):  Actual number of international tourist arrivals in millions for the year 2023.
+<li>	MostVisited_NumOfArrivals_Millions_2022 (float64): Actual number of international tourist arrivals in millions for the year 2022.
+<li>	MostVisited_NumofArrivals_WorldBank (float64): Annual international tourist arrivals as reported by the World Bank.
 MostVisited_DataYear_WorldBank (int): Year for which the World Bank data on international tourist arrivals is provided.
 
 2: 
